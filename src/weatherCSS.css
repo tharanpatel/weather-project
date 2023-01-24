@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,800&display=swap');
+
+/** Page Layout **/
+
+.central-square {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+    text-transform: uppercase;
+}
+
+.icon {
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    left: 175px;
+}
+
+#temperature {
+    display: inline-block;
+    position: relative;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    margin-left: calc(5vw + 20px);
+    position: relative;
+}
+
+.search-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.search-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.search-items div:hover {
+    background-color: #d4d4d4;
+}
+
+.search-active {
+    background-color: aquamarine;
+    color: orange;
+}
+
+.search > button {
+    margin-left: 20px;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.search :focus {
+    outline: none;
+}
+
+input {
+    width: 40vw;
+    height: 5vh;
+    z-index: 3;
+}
+
+/** Page Appearance **/
+
+body {
+    background-image:url("https://wallpapercave.com/wp/wp4870501.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    border-bottom: 3px solid #000000D9;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+.search > button {
+    border: none;
+    border-radius: 10px;
+    background-color: #000000D9;
+    color: #FFFFFF;
+}
+
+.central-square {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #00000000;
+    background-color: #000000D9;
+    padding: 10px 30px 10px 30px;
+}
+
+.central-square > * {
+    margin-bottom: 10px;
+}
+
+
+/** Text Styling **/
+
+.search {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+
+
+.central-square {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#weather-conditions {
+    text-transform: capitalize;
+}
+
+#temperature {
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    margin-bottom: 10px !important;
+}
+
+.central-square.loading {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 400px) {
+
+    .search > button {
+        width: 10vw;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+}
+
+
