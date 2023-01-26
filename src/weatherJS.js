@@ -1,6 +1,6 @@
 // API call to fetch data and convert into JSON format
 let weather = {
-    apiKey: "00b46748bdc547f5eecad6798c4a751e",
+    apiKey: "tharansApiKey",
     fetchWeather: function(city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q="
             + city
